@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Target, Brain, TrendingUp, Users, BookOpen, Zap, ArrowRight } from "lucide-react";
+import { Brain, Users, BookOpen, Zap, ArrowRight } from "lucide-react";
 
 export default function AboutPage() {
   return (
