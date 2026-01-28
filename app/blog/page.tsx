@@ -19,6 +19,9 @@ export default function BlogPage() {
   const today = getTodayYYYYMMDD();
   const visiblePosts = blogPosts.filter((post) => post.publishDate <= today);
   const upcomingPosts = blogPosts.filter((post) => post.publishDate > today);
+  const nextPost = upcomingPosts.length > 0 
+    ? upcomingPosts.sort((a, b) => a.publishDate.localeCompare(b.publishDate))[0]
+    : null;
 
   return (
     <div className="min-h-screen trading-bg-pattern">
@@ -70,23 +73,16 @@ export default function BlogPage() {
             </div>
           )}
 
-          {upcomingPosts.length > 0 && (
+          {nextPost && (
             <div className="mt-16 pt-12 border-t border-border">
-              <h2 className="text-2xl font-bold mb-6">Upcoming</h2>
-              <p className="text-muted-foreground mb-6">
-                New posts are scheduled to release on the dates below.
-              </p>
-              <ul className="space-y-4">
-                {upcomingPosts.map((post) => (
-                  <li key={post.id} className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 py-3 border-b border-border last:border-0">
-                    <span className="font-medium">{post.title}</span>
-                    <span className="text-sm text-muted-foreground flex items-center gap-1.5 shrink-0">
-                      <Calendar className="h-4 w-4" />
-                      Release: {post.date}
-                    </span>
-                  </li>
-                ))}
-              </ul>
+              <h2 className="text-2xl font-bold mb-6">Coming Next</h2>
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 py-3">
+                <span className="font-medium">{nextPost.title}</span>
+                <span className="text-sm text-muted-foreground flex items-center gap-1.5 shrink-0">
+                  <Calendar className="h-4 w-4" />
+                  Release: {nextPost.date}
+                </span>
+              </div>
             </div>
           )}
         </div>

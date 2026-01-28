@@ -6,21 +6,21 @@ import { Shield, Clock, TrendingUp } from "lucide-react";
 const plannedFeatures = [
   {
     icon: Shield,
-    title: "Planned Risk Management Engine",
+    title: "Planned Risk Intelligence",
     description:
-      "A rules-based engine designed to protect capital with automatic position sizing, stop placement, and portfolio-level risk controls.",
+      "AI-driven guidance on position sizing, stop placement, and portfolio-level risk—you make the final call on every trade.",
   },
   {
     icon: Clock,
     title: "24/7 Market Watch (Planned)",
     description:
-      "Continuous monitoring of key markets to free you from the screen while still surfacing high-quality opportunities.",
+      "Continuous AI monitoring of key markets to surface high-quality opportunities and alerts; you decide when to act.",
   },
   {
     icon: TrendingUp,
     title: "Trend & Structure Alignment",
     description:
-      "Logic built to align entries with market structure, timing windows, and bias—so automation reinforces, not replaces, your strategy.",
+      "Intelligence built to align with market structure, timing windows, and bias—so the AI reinforces, not replaces, your strategy.",
   },
 ];
 
@@ -38,14 +38,14 @@ export default function ToolsPage() {
               height={216}
               className="mx-auto mb-6 rounded-full object-contain"
             />
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">Stable Collective EA Bot</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">Stable Collective AI Intelligence Bot</h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-4">
-              Future home of the Stable Collective EA Bot—an automated trading assistant built to extend, not replace,
-              the way you already read the market.
+              Future home of the Stable Collective AI Intelligence Bot—an AI-powered analysis and insight tool built to
+              extend, not replace, the way you already read the market.
             </p>
             <p className="text-sm text-muted-foreground max-w-2xl mx-auto">
               We&apos;re currently testing and refining the logic offline. When it&apos;s ready, this page will become the
-              control center for configuration, risk parameters, and deployment.
+              hub for configuration, risk parameters, and AI-driven market insight—you stay in control of every trade.
             </p>
           </div>
 
@@ -74,20 +74,20 @@ export default function ToolsPage() {
             <CardHeader className="text-center">
               <CardTitle className="text-2xl mb-2">Currently in Development</CardTitle>
               <CardDescription className="text-base max-w-2xl mx-auto">
-                The Stable Collective EA Bot is being developed and validated offline to ensure it aligns with our
-                philosophy of disciplined, psychology-aware trading. We&apos;ll never rush automation just to ship
+                The Stable Collective AI Intelligence Bot is being developed and validated offline to ensure it aligns
+                with our philosophy of disciplined, psychology-aware trading. We&apos;ll never rush AI tools just to ship
                 software.
               </CardDescription>
             </CardHeader>
             <CardContent className="text-center space-y-4">
               <p className="text-sm text-muted-foreground">
                 For now, focus on mastering structure, psychology, and execution through our programs, Psychology Blog,
-                and Jubilee Market Scanner. When the EA Bot is ready, the traders who understand the process will get
-                the most from it.
+                and Jubilee Market Scanner. When the AI Intelligence Bot is ready, the traders who understand the
+                process will get the most from it.
               </p>
               <Button asChild size="lg" variant="outline">
                 <a href="/join">
-                  Join the Community for EA Updates
+                  Join the Community for AI Bot Updates
                 </a>
               </Button>
             </CardContent>

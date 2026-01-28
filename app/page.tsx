@@ -54,7 +54,7 @@ export default function Home() {
       <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-            Whether you&apos;re new to trading or ready to elevate your skill, the Stable Collective ecosystem gives you structure, clarity, and advanced trading insight you can actually apply immediately—from the <strong>Jubilee Market Scanner</strong> and <strong>EA Bot</strong> to comprehensive <strong>trading programs</strong>, mindset mastery in our <strong>Psychology Blog</strong>, and long-term <strong>legacy-building</strong> strategies.
+            Whether you&apos;re new to trading or ready to elevate your skill, the Stable Collective ecosystem gives you structure, clarity, and advanced trading insight you can actually apply immediately—from the <strong>Jubilee Market Scanner</strong> and <strong>AI Intelligence Bot</strong> to comprehensive <strong>trading programs</strong>, mindset mastery in our <strong>Psychology Blog</strong>, and long-term <strong>legacy-building</strong> strategies.
           </p>
         </div>
       </section>

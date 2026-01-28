@@ -1,61 +1,13 @@
 import Link from "next/link";
-import Image from "next/image";
 import { Twitter, Instagram, Linkedin } from "lucide-react";
 
 export function Footer() {
   return (
     <footer className="border-t border-border bg-card mt-auto">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="flex flex-col items-center gap-6 mb-6">
           <div>
-            <Link href="/" className="flex items-center gap-3 mb-4">
-              <Image
-                src="/stable-collective-logo.png"
-                alt="Stable Collective Logo"
-                width={156}
-                height={156}
-                className="rounded-full object-contain shrink-0"
-              />
-              <h3 className="text-xl font-bold text-primary">Stable Collective</h3>
-            </Link>
-            <p className="text-muted-foreground text-sm">
-              Master the markets and build lasting wealth—Jubilee Scanner, EA Bot, trading programs, psychology blog, and legacy-building strategies.
-            </p>
-          </div>
-
-          <div>
-            <h4 className="font-semibold mb-4">Quick Links</h4>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link href="/" className="text-muted-foreground hover:text-primary transition-colors">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link href="/blog" className="text-muted-foreground hover:text-primary transition-colors">
-                  Psychology Blog
-                </Link>
-              </li>
-              <li>
-                <Link href="/programs" className="text-muted-foreground hover:text-primary transition-colors">
-                  Programs
-                </Link>
-              </li>
-              <li>
-                <Link href="/scanner" className="text-muted-foreground hover:text-primary transition-colors">
-                  Jubilee Scanner
-                </Link>
-              </li>
-              <li>
-                <Link href="/tools" className="text-muted-foreground hover:text-primary transition-colors">
-                  EA Bot
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="font-semibold mb-4">Connect</h4>
+            <h4 className="font-semibold mb-4 text-center">Connect</h4>
             <div className="flex space-x-4">
               <a
                 href="#"
@@ -82,7 +34,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 pt-8 border-t border-border">
+        <div className="pt-6 border-t border-border">
           <p className="text-sm text-muted-foreground text-center mb-4">
             Educational purposes only. Trading involves risk and results vary. No financial results are guaranteed.
           </p>
