@@ -1,0 +1,328 @@
+export type BlogPost = {
+  id: number;
+  title: string;
+  description: string;
+  date: string;
+  publishDate: string;
+  readTime: string;
+  body: string[];
+};
+
+export const blogPosts: BlogPost[] = [
+  {
+    id: 1,
+    title: "Position Sizing That Protects Your Account",
+    description: "One of the most overlooked skills in trading is how much to risk per trade. Learn practical rules for position sizing—including fixed fractional and percentage-of-equity methods—so drawdowns stay manageable and you can stay in the game.",
+    date: "January 1, 2026",
+    publishDate: "2026-01-01",
+    readTime: "7 min read",
+    body: [
+      "One of the most overlooked skills in trading isn't which indicator to use or which pair to trade—it's how much to risk per trade. Blow up your size once and you'll understand why. The goal of position sizing is simple: keep drawdowns within a range you can tolerate emotionally and financially, so you stay in the game long enough for your edge to play out.",
+      "Two common approaches are fixed fractional (risk a set percentage of your account per trade, e.g. 1%) and percentage-of-equity (adjust that percentage as your account grows or shrinks). Neither is magic, but both force you to define risk before you enter and to scale position size to your stop distance. If your stop is 50 pips, your risk per pip should be sized so that 50 pips equals your chosen risk amount.",
+      "Start conservative. Many traders begin with 0.5% or 1% per trade and only consider increasing once they've seen a long run of consistent execution and results. The best position size is the one that lets you sleep at night and come back the next day.",
+    ],
+  },
+  {
+    id: 2,
+    title: "Reading Market Structure: Where Price Wants to Go",
+    description: "Higher highs, lower lows, and break of structure aren't just jargon—they're the language of the market. A clear look at how to read structure on the chart and use it to improve entries and avoid fighting the trend.",
+    date: "January 15, 2026",
+    publishDate: "2026-01-15",
+    readTime: "9 min read",
+    body: [
+      "Higher highs and higher lows define an uptrend; lower highs and lower lows define a downtrend. When price breaks that pattern—for example, making a lower low in an uptrend—you get a break of structure (BOS). That doesn't always mean the trend is over, but it does mean the structure has changed and you should pay attention.",
+      "Structure tells you where price has been and often where it might go next. Swing highs and swing lows act as magnets: pullbacks to structure in a trend often offer entries, and breaks of key structure can signal continuation or reversal. The key is to mark structure clearly, avoid drawing every tiny wiggle, and use it to define your bias and your invalidation.",
+      "Don't fight the structure. If the chart is making higher highs and higher lows, look for longs on pullbacks, not shorts at the top. Reading structure isn't about predicting the future—it's about aligning your trades with the path price has already shown you.",
+    ],
+  },
+  {
+    id: 3,
+    title: "Why Trade Journaling Beats Memory Every Time",
+    description: "Your brain edits the past. A trade journal doesn't. We break down what to log after every trade, how to review your journal weekly, and why the best traders treat journaling as non-negotiable.",
+    date: "February 1, 2026",
+    publishDate: "2026-02-01",
+    readTime: "6 min read",
+    body: [
+      "Your brain is great at many things, but accurate recall of past trades isn't one of them. We tend to remember our winners and downplay or forget our losers. We tell ourselves we \"mostly followed the plan\" when we didn't. A trade journal doesn't edit. It gives you a record you can review with clear eyes.",
+      "After every trade, log at least: instrument, direction, entry and exit, reason for entry (what setup or rule), reason for exit, and whether you followed your plan. Screenshots of the chart at entry help. So do a line or two on how you felt—overconfident, fearful, bored—because emotion often drives the mistakes we repeat.",
+      "Review your journal weekly. Look for patterns: Do you lose more on certain days or sessions? Do you exit winners too early? Do you override your rules when you're down? One or two recurring themes usually stand out. Fix those before adding new strategies.",
+    ],
+  },
+  {
+    id: 4,
+    title: "Building a Trading Plan You'll Actually Follow",
+    description: "A plan in a drawer is useless. Here's how to write a simple, actionable trading plan—rules for entries, exits, risk, and sessions—and tie it to your calendar so it becomes part of your routine instead of a one-time document.",
+    date: "February 15, 2026",
+    publishDate: "2026-02-15",
+    readTime: "8 min read",
+    body: [
+      "A trading plan doesn't have to be a 50-page manual. It does need to answer a few questions clearly: What markets and timeframes do you trade? What setups or conditions trigger an entry? Where do you place stops and targets? How much do you risk per trade? When do you trade—which sessions and days—and when do you stay out?",
+      "Write it in plain language. If you can't explain your rules in a few sentences, they're probably too vague to follow. \"I only take longs when price pulls back to the 21 EMA in an uptrend\" is actionable. \"I trade when I see a good setup\" is not.",
+      "The final step is to tie the plan to your routine. Block time for market review and execution. Put your rules where you'll see them—next to your charts or in a daily checklist. A plan you never look at won't change your behavior. A plan you use every day becomes the default.",
+    ],
+  },
+  {
+    id: 5,
+    title: "Support and Resistance: Drawing Lines That Matter",
+    description: "Not every level is created equal. Learn how to identify high-probability support and resistance—and when to redraw or drop a level so your chart stays clean and actionable.",
+    date: "March 1, 2026",
+    publishDate: "2026-03-01",
+    readTime: "8 min read",
+    body: [
+      "Support and resistance work because traders remember where price reversed or stalled before. The more times a level has been tested and held—or broken with conviction—the more weight it tends to carry. That doesn't mean every horizontal line is valid. Clutter kills clarity.",
+      "Focus on levels that have clearly mattered: swing highs and lows that turned price, round numbers that attract orders, and areas where multiple timeframes align. One clean level that has been tested two or three times is better than a dozen lines that might be \"in the zone.\"",
+      "When price breaks a level and holds, that level often flips: former resistance becomes support, or vice versa. When a level is broken and then retested and holds, you have confirmation. Redraw or drop levels when the market invalidates them. Your chart should reflect what price is doing now, not what you hoped it would do.",
+    ],
+  },
+  {
+    id: 6,
+    title: "The London–New York Overlap: When Liquidity Peaks",
+    description: "The busiest hours of the day often produce the cleanest moves. We break down the London–New York overlap: why it matters, which pairs to watch, and how to avoid the traps.",
+    date: "March 15, 2026",
+    publishDate: "2026-03-15",
+    readTime: "7 min read",
+    body: [
+      "The overlap between the London and New York sessions—roughly 8:00 AM to 12:00 PM Eastern—is when volume and volatility in FX tend to peak. Two major financial centers are active at once, so spreads often tighten and price can move with conviction. For many traders, that's when the best opportunities appear.",
+      "Major pairs like EUR/USD, GBP/USD, and USD/JPY see the most action during the overlap. Crosses that include the euro or pound often follow. If you trade during this window, you get liquidity and movement; you also get faster price action and more noise. Your strategy and risk rules need to account for that.",
+      "Avoid the trap of trading the open just because it's the open. Wait for structure: a clear level, a break, or a pullback. Use the overlap for execution when your setup appears, not as a reason to force a trade. Sometimes the best trade during the overlap is no trade at all.",
+    ],
+  },
+  {
+    id: 7,
+    title: "Risk Per Trade: Why 1% Isn't Magic (But Works)",
+    description: "The 1% rule is a starting point, not a religion. Explore how to choose a risk level that fits your account size, psychology, and edge—and when it makes sense to adjust.",
+    date: "April 1, 2026",
+    publishDate: "2026-04-01",
+    readTime: "6 min read",
+    body: [
+      "Risking 1% of your account per trade is a convention, not a law. It's popular because it keeps drawdowns manageable: even 10 losses in a row would cost you about 10% of your account. For many traders, that's a survivable hit. For others, 1% feels too big or too small.",
+      "Your risk per trade should fit your account size, your edge (win rate and average win/loss), and your psychology. If 1% keeps you up at night, go smaller. If you're consistently profitable and your drawdowns are shallow, some traders cautiously increase size—but only after a long track record.",
+      "The real benefit of a fixed risk percentage is discipline. It forces you to define risk before you enter and to size positions to your stop. Whether you use 0.5%, 1%, or 2%, the habit of deciding in advance and sticking to it matters more than the exact number.",
+    ],
+  },
+  {
+    id: 8,
+    title: "Drawdowns Are Inevitable. How You Respond Isn't.",
+    description: "Every trader faces drawdowns. The difference is how you manage them: position size, emotional reset, and when to step back. Practical steps to protect capital and mindset when the curve dips.",
+    date: "April 15, 2026",
+    publishDate: "2026-04-15",
+    readTime: "7 min read",
+    body: [
+      "Every trader faces drawdowns. It's not a question of if but when. The difference between those who recover and those who blow up is how they respond. Chasing losses, doubling size to \"get even,\" or abandoning your plan in a slump usually makes things worse.",
+      "When you're in a drawdown, the first step is to protect capital. That often means reducing size or taking a short break until you're calm and following your plan again. There's no shame in stepping back. The goal is to stay in the game so your edge can work over time.",
+      "Use the drawdown as data. Review your journal: Were you following your rules? Did you take marginal setups? Did you move stops or skip risk management? Often the same mistakes repeat. Fix the behavior, not just the last trade. Drawdowns are part of trading; how you learn from them is up to you.",
+    ],
+  },
+  {
+    id: 9,
+    title: "Backtesting Without Fooling Yourself",
+    description: "Backtests can lie if you're not careful. Learn how to avoid curve-fitting, account for spread and slippage, and run tests that actually tell you something about real-world performance.",
+    date: "May 1, 2026",
+    publishDate: "2026-05-01",
+    readTime: "9 min read",
+    body: [
+      "Backtesting is a useful tool, but it's easy to fool yourself. The biggest trap is curve-fitting: tweaking rules until the backtest looks great. Those rules often fall apart in live markets because they were tailored to past noise, not to a real edge. If you've changed parameters many times to improve results, be suspicious.",
+      "Always account for spread and slippage. A strategy that looks profitable with zero costs can be a loser once you add real execution costs. Use conservative estimates—wider spreads and a few points of slippage—so your backtest is closer to reality.",
+      "Out-of-sample testing helps. Split your data: develop and optimize on one period, then test on a different period you haven't touched. If the strategy holds up on the unseen data, it's more likely to have a real edge. The goal of a backtest isn't a pretty equity curve; it's evidence that your idea might work in the future.",
+    ],
+  },
+  {
+    id: 10,
+    title: "From Backtest to Live: Forward Testing Your Edge",
+    description: "The gap between backtest and live trading is where many edges die. How to forward test properly—paper or micro size—and when you're ready to go live.",
+    date: "May 15, 2026",
+    publishDate: "2026-05-15",
+    readTime: "8 min read",
+    body: [
+      "A strategy that works in a backtest doesn't always work live. Execution is different, emotions are real, and market conditions change. Forward testing—trading the strategy in real time with paper or micro size—helps you bridge that gap before risking full size.",
+      "Paper trading is useful for learning the mechanics and timing of your entries and exits, but it doesn't fully replicate the psychological pressure of real money. Trading micro or minimum size live can: you feel the wins and losses, and you learn whether you can follow your plan when it matters. Run at least 20–30 trades at small size and compare results to your backtest.",
+      "When you're ready to go live at full size, scale up gradually. Don't jump from paper or micro to your full risk in one step. Increase size as you confirm that your execution and psychology match your plan. The goal is to preserve capital while you validate your edge in real time.",
+    ],
+  },
+  {
+    id: 11,
+    title: "R-Multiples: Measuring Reward Before You Enter",
+    description: "Knowing your risk is half the picture. R-multiples help you size reward relative to risk and set targets that keep your expectancy positive. A simple framework that scales.",
+    date: "June 1, 2026",
+    publishDate: "2026-06-01",
+    readTime: "6 min read",
+    body: [
+      "R is your risk on a trade—usually the distance from entry to stop in dollars or pips. An R-multiple is how much you make (or lose) relative to that risk. If you risk $100 and make $200, you made 2R. If you lose $100, you lost 1R. It's a simple way to compare trades across different instruments and sizes.",
+      "Before you enter, know your potential reward in R. If your stop is 20 pips and your target is 40 pips, you're aiming for 2R. That means you can be wrong half the time and still break even; if your win rate is better than 50%, you're ahead. Expectancy is win rate times average win minus loss rate times average loss—R-multiples make that math easy.",
+      "Use R to set targets. Aim for at least 1R on winners so that a 50% win rate is profitable. Many traders target 1.5R or 2R to give more cushion. The key is to define both risk and reward before you enter, so you're not guessing when to exit.",
+    ],
+  },
+  {
+    id: 12,
+    title: "When to Scale In and When to Walk Away",
+    description: "Adding to winners can boost returns—or blow up discipline. We look at rules for scaling in, when to avoid it, and how to keep position sizing under control.",
+    date: "June 15, 2026",
+    publishDate: "2026-06-15",
+    readTime: "7 min read",
+    body: [
+      "Scaling into a winning trade can increase profit when the trend keeps going. You add size as price moves in your favor, so your average entry improves. The danger is that scaling in can also mean oversized exposure if the trend reverses. One bad reversal can wipe out the gains from several scaled adds.",
+      "If you scale in, do it with rules: add only at defined levels (e.g. pullbacks to structure), never add more than your initial risk rules allow in total, and move your stop to breakeven or better as you add. Treat each add as a new trade with its own risk. Without rules, scaling in becomes gambling.",
+      "Many traders are better off not scaling in at all. One position, one stop, one target—simpler and easier to manage. Scaling in is an advanced technique. Master the basics first: consistent entries, strict risk, and a clear plan. Add complexity only when the basics are automatic.",
+    ],
+  },
+  {
+    id: 13,
+    title: "Trading Sessions: Asia, London, New York",
+    description: "Each session has its own character. A guide to session times, typical volatility, and which pairs and styles tend to work best in each window.",
+    date: "July 1, 2026",
+    publishDate: "2026-07-01",
+    readTime: "8 min read",
+    body: [
+      "The forex market runs 24 hours during the week, but not all hours are equal. The Asian session (Tokyo, Sydney) often has lower volatility and range-bound price action in major pairs. London opens with a burst of activity, especially in EUR and GBP pairs. New York adds USD flow and overlaps with London for a few hours of peak volume.",
+      "If you're a trend or breakout trader, London and the London–New York overlap often offer the clearest moves. If you're a range or mean-reversion trader, Asian session ranges can provide opportunities. Match your strategy to the session: don't expect big breakouts in the dead of Asian night if you're trading EUR/USD.",
+      "Session times vary with daylight saving. Know when your session opens and closes in your timezone, and when overlaps occur. Use that to plan when you'll be at the screen and when you'll step away. Not every session has to be traded.",
+    ],
+  },
+  {
+    id: 14,
+    title: "Scalping vs. Swing: Matching Style to Your Life",
+    description: "Your schedule and personality should inform your timeframe. We compare scalping and swing trading—time commitment, psychology, and how to choose without chasing someone else's style.",
+    date: "July 15, 2026",
+    publishDate: "2026-07-15",
+    readTime: "7 min read",
+    body: [
+      "Scalping is short-term: you're in and out in minutes, often targeting small moves. It requires focus, fast execution, and the ability to sit at the screen during active hours. Swing trading holds positions for days or weeks, targeting larger moves. It requires less screen time but more patience and the ability to hold through overnight risk and drawdowns.",
+      "Your schedule and personality should inform your choice. If you have a full-time job and can't watch the chart all day, scalping is a poor fit. If you get antsy holding for days, swing trading may frustrate you. There's no \"better\" style—only what fits your life and your psychology.",
+      "Don't chase someone else's style because it looks exciting. Choose a timeframe and style you can stick with, then learn it deeply. Consistency in approach beats hopping between scalping and swinging based on the last video you watched.",
+    ],
+  },
+  {
+    id: 15,
+    title: "Emotional Regulation After a Losing Streak",
+    description: "Losing streaks test even disciplined traders. Practical ways to reset: when to reduce size, when to take a day off, and how to separate one bad week from your long-term edge.",
+    date: "August 1, 2026",
+    publishDate: "2026-08-01",
+    readTime: "6 min read",
+    body: [
+      "Losing streaks are part of trading. Even with a positive edge, you'll have runs of losses. The challenge is to avoid letting those runs change your behavior: revenge trading, doubling size, or abandoning your plan. Emotional regulation isn't about never feeling bad—it's about not letting those feelings drive your next trade.",
+      "When you're in a slump, reduce size or take a day off. Giving yourself permission to step back can prevent a bad week from becoming a blown account. Review your journal: were you following your rules? If yes, the streak may just be variance. If no, fix the behavior before resuming full size.",
+      "Separate one bad week from your long-term edge. A few losses don't invalidate a strategy that has worked over many trades. Stay with your plan, protect your capital, and let the edge play out. The traders who survive are the ones who don't let a drawdown turn into a disaster.",
+    ],
+  },
+  {
+    id: 16,
+    title: "The ECC11 Approach: Structure and Timing",
+    description: "Market structure and timing go hand in hand. An introduction to the ECC11 framework—how it fits into reading the chart and planning entries—and where to go deeper.",
+    date: "August 15, 2026",
+    publishDate: "2026-08-15",
+    readTime: "8 min read",
+    body: [
+      "The ECC11 approach ties market structure and timing together. Structure tells you where price has been and where it might go; timing helps you decide when to enter rather than chasing or entering too early. Used together, they give you a framework for reading the chart and planning trades.",
+      "Structure in this context means swing highs and lows, breaks of structure, and key levels. Timing means waiting for price to show you something—a pullback, a hold of a level, or a clear signal—before you commit. The idea is to align with the trend or the shift in structure, then enter when the moment is right, not when you're impatient.",
+      "This is an introduction; the full framework is taught in depth through Dr. Kathy Kirkland's mentorship and related programs. If you're interested in going deeper, look for structured education that includes live application and feedback, not just theory.",
+    ],
+  },
+  {
+    id: 17,
+    title: "Liquidity Pools and Where Price Often Reverses",
+    description: "Institutional order flow leaves clues. We explore how liquidity pools form, where stops often cluster, and how to use that context without overcomplicating your chart.",
+    date: "September 1, 2026",
+    publishDate: "2026-09-01",
+    readTime: "9 min read",
+    body: [
+      "Liquidity in the market isn't evenly distributed. Orders cluster around certain price levels: obvious highs and lows, round numbers, and areas where many traders place stops. Institutions and larger players often use that information—sweeping stops to trigger orders before moving price in the other direction.",
+      "You don't need to become an order-flow expert to use the idea. If you notice that price often dips below a clear low (taking out stops) and then reverses, you're seeing a form of liquidity grab. That doesn't mean every such move is tradeable, but it can help you avoid selling the exact low or buying the exact high when you're looking for reversals or continuation.",
+      "Keep it simple. Mark key highs and lows and watch how price behaves around them. Don't overload your chart with liquidity zones and order blocks unless you're willing to backtest and refine. One or two clear levels often matter more than a busy map.",
+    ],
+  },
+  {
+    id: 18,
+    title: "Automation and Alerts: Let the Market Come to You",
+    description: "You don't have to watch the screen all day. How to use alerts and light automation to catch setups on your terms—without giving up discretion at the trigger.",
+    date: "September 15, 2026",
+    publishDate: "2026-09-15",
+    readTime: "7 min read",
+    body: [
+      "You don't have to watch the chart every minute. Alerts can notify you when price hits a level, when an indicator crosses, or when volatility reaches a threshold. That way you can focus on other things and only engage when something relevant happens.",
+      "Set alerts for the setups you care about: key support or resistance, a moving average touch, or a break of structure. When the alert fires, open the chart and decide with a clear head—don't feel obligated to trade just because price arrived. Alerts are there to bring opportunity to you, not to force your hand.",
+      "Light automation—like automated alerts or scripts that flag conditions—can extend that idea. Full algorithmic trading is another step; many traders stay discretionary at the trigger and use technology only to filter and notify. Find the balance that keeps you in control.",
+    ],
+  },
+  {
+    id: 19,
+    title: "Community and Mentorship in Trading",
+    description: "Trading is solitary, but learning doesn't have to be. Why community and mentorship matter, how to find the right fit, and what to expect—and avoid—in groups and programs.",
+    date: "October 1, 2026",
+    publishDate: "2026-10-01",
+    readTime: "6 min read",
+    body: [
+      "Trading is done alone in front of the screen, but learning and staying accountable don't have to be. A good community or mentor can help you stick to your plan, spot blind spots, and avoid common mistakes. The wrong group can waste your time or push you toward overtrading and hype.",
+      "Look for communities that focus on process and discipline, not get-rich signals or constant trade ideas. A mentor who has a track record of teaching (not just trading) and who emphasizes risk and psychology is worth more than a guru who only shows wins. Ask what their approach is and how they handle drawdowns and mistakes.",
+      "Set boundaries. You don't have to trade like everyone else in the group. Use community for support and feedback; keep your plan and your risk rules as your own. The goal is to improve, not to copy.",
+    ],
+  },
+  {
+    id: 20,
+    title: "Reviewing Your Week: A 15-Minute Ritual",
+    description: "A short weekly review can sharpen your edge. What to look at: win rate, average R, biggest mistake, and one change for next week. A template that sticks.",
+    date: "October 15, 2026",
+    publishDate: "2026-10-15",
+    readTime: "5 min read",
+    body: [
+      "A weekly review doesn't need to take an hour. Fifteen minutes is enough if you're focused. Open your journal and your trading log. How many trades did you take? What was your win rate? What was your average R on winners and losers? Did you follow your plan on every trade?",
+      "Note your biggest mistake of the week—the one that cost you the most or violated your rules. Then pick one change for next week: one behavior to fix or one thing to do more of. Don't try to fix everything at once. One clear improvement per week compounds.",
+      "Do this at the same time every week—e.g. Sunday evening or Friday after the close. Make it a ritual. Over time you'll see patterns and your consistency will improve. The traders who get better are the ones who review, adjust, and repeat.",
+    ],
+  },
+  {
+    id: 21,
+    title: "Trend Following Without Chasing",
+    description: "Trend following works—until you enter too late. How to define the trend, wait for pullbacks or structure, and avoid buying every new high.",
+    date: "November 1, 2026",
+    publishDate: "2026-11-01",
+    readTime: "8 min read",
+    body: [
+      "Trend following is simple in theory: identify the trend, then trade in that direction. In practice, the hard part is not chasing. Buying every new high or selling every new low often leads to entries at the worst time—right before a pullback or reversal. The goal is to align with the trend and enter on a pullback or a clear structure break.",
+      "Define the trend on your timeframe: higher highs and higher lows for up, lower highs and lower lows for down. Then wait. Let price pull back to a level that makes sense—a moving average, a prior structure level, or a clear support/resistance zone. Enter when price shows reaction at that level, not when you're excited because it's \"going up.\"",
+      "Use a stop that respects structure. If you're long on a pullback, your stop is typically below the pullback low or the relevant structure. If price takes that out, the setup is invalid. Trend following without chasing means patience: wait for the trend, then wait for the entry.",
+    ],
+  },
+  {
+    id: 22,
+    title: "When Not to Trade: Patience as an Edge",
+    description: "Sitting on your hands is a skill. When to skip a session, sit out a choppy market, or pass on a marginal setup—and why that protects your capital and your head.",
+    date: "November 15, 2026",
+    publishDate: "2026-11-15",
+    readTime: "6 min read",
+    body: [
+      "Not trading is a decision. When there's no clear setup, no alignment with your plan, or when you're tired, emotional, or distracted, the best trade is often no trade. Patience is an edge: it keeps you out of bad trades and preserves capital for when the right opportunity appears.",
+      "Sit out choppy, range-bound markets if your edge is trend or breakout based. Sit out when key news or events could spike volatility in unpredictable ways, unless your plan explicitly includes those events. Sit out when you've already had a big loss or a big win and your head isn't clear. One forced trade can wipe out a week of discipline.",
+      "Define in your plan when you will not trade: which sessions, which conditions, and which emotional states. Then follow it. The goal isn't to trade every day; it's to trade well when you do.",
+    ],
+  },
+  {
+    id: 23,
+    title: "Year in Review: Auditing Your Trading",
+    description: "Before you set new goals, look back. How to audit your year: metrics that matter, patterns in your mistakes, and one or two focus areas for the year ahead.",
+    date: "December 1, 2026",
+    publishDate: "2026-12-01",
+    readTime: "7 min read",
+    body: [
+      "Before you set goals for the new year, audit the last one. How many trades did you take? What was your win rate and average R? Did you make or lose money? More importantly: did you follow your plan? Did you respect risk? Did you repeat the same mistakes?",
+      "Look for patterns. Do you lose more on certain days or in certain sessions? Do you overtrade after a loss? Do you exit winners too early? Often one or two behaviors explain most of the damage. Those are your focus areas—not \"trade better\" but \"stop doing X\" or \"start doing Y.\"",
+      "Use the audit to set one or two concrete goals for the year ahead. \"Improve\" is vague. \"Review my journal every Sunday\" or \"Never risk more than 1% per trade\" is specific. Build on what the data and your review tell you.",
+    ],
+  },
+  {
+    id: 24,
+    title: "Setting Up 2027: Goals That Stick",
+    description: "Vague resolutions don't survive February. How to set trading goals that are specific, measurable, and tied to process—so you actually follow through.",
+    date: "December 15, 2026",
+    publishDate: "2026-12-15",
+    readTime: "6 min read",
+    body: [
+      "Vague resolutions—\"trade better,\" \"make more money\"—don't survive February because they're not actionable. Goals that stick are specific, measurable, and tied to process. Process goals are things you control: how much you risk, how often you review your journal, whether you follow your plan. Outcome goals (e.g. \"make 20% this year\") depend on the market; you can do everything right and still fall short.",
+      "Write down one or two process goals. Examples: \"I will risk no more than 1% per trade.\" \"I will complete a weekly review every Sunday.\" \"I will not trade during the first 15 minutes after a major news release.\" Then tie them to a routine—same day, same time—so they become habits.",
+      "Review your goals quarterly. Are you on track? Do you need to adjust? Goals that stick are the ones you actually use. Keep them visible, keep them simple, and focus on what you can control.",
+    ],
+  },
+];
+
+export function getPostById(id: number): BlogPost | undefined {
+  return blogPosts.find((post) => post.id === id);
+}
