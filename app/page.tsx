@@ -164,6 +164,18 @@ export default function Home() {
             <p className="text-center text-muted-foreground mt-6">
               Build the psychological resilience to navigate volatility—and master your trading mindset with insights on discipline, fear management, and emotional control in our Psychology Blog.
             </p>
+            <p className="text-center text-xs text-muted-foreground mt-3">
+              Inspired by{" "}
+              <a
+                href="https://www.tradingview.com/chart/SILH2026/FFqGxyu6-Trading-Is-Technical-Surviving-It-Is-Mental/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline underline-offset-4 hover:text-primary"
+              >
+                Trading Is Technical. Surviving It Is Mental.
+              </a>{" "}
+              on TradingView.
+            </p>
             <div className="mt-8 text-center">
               <Button asChild size="lg">
                 <Link href="/blog">
