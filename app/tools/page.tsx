@@ -81,7 +81,7 @@ export default function ToolsPage() {
             </CardHeader>
             <CardContent className="text-center space-y-4">
               <p className="text-sm text-muted-foreground">
-                For now, focus on mastering structure, psychology, and execution through our programs, Psychology Blog,
+                For now, focus on mastering structure, psychology, and execution through our programs, The Blog Space,
                 and Jubilee Market Scanner. When the AI Intelligence Bot is ready, the traders who understand the
                 process will get the most from it.
               </p>

@@ -15,11 +15,11 @@ interface Signal {
   time: string;
   trend: "up" | "down";
   strength: number; // 1-5 scale
-  marketType: "forex" | "crypto" | "futures";
+  marketType: "forex" | "crypto";
 }
 
 // Mock entry signals data - will be replaced with live data
-const generateMockSignals = (marketType: "forex" | "crypto" | "futures"): Signal[] => {
+const generateMockSignals = (marketType: "forex" | "crypto"): Signal[] => {
   const now = new Date();
   const baseSignals: Record<string, Signal[]> = {
     forex: [
@@ -35,13 +35,6 @@ const generateMockSignals = (marketType: "forex" | "crypto" | "futures"): Signal
       { symbol: "SOLUSD", action: "SELL", price: "98.50", time: now.toLocaleTimeString(), trend: "down", strength: 3, marketType: "crypto" },
       { symbol: "BNBUSD", action: "BUY", price: "315.00", time: now.toLocaleTimeString(), trend: "up", strength: 2, marketType: "crypto" },
       { symbol: "ADAUSD", action: "BUY", price: "0.485", time: now.toLocaleTimeString(), trend: "up", strength: 4, marketType: "crypto" },
-    ],
-    futures: [
-      { symbol: "ES1!", action: "SELL", price: "4,850", time: now.toLocaleTimeString(), trend: "down", strength: 3, marketType: "futures" },
-      { symbol: "NQ1!", action: "BUY", price: "17,250", time: now.toLocaleTimeString(), trend: "up", strength: 4, marketType: "futures" },
-      { symbol: "YM1!", action: "BUY", price: "38,500", time: now.toLocaleTimeString(), trend: "up", strength: 5, marketType: "futures" },
-      { symbol: "CL1!", action: "SELL", price: "72.50", time: now.toLocaleTimeString(), trend: "down", strength: 2, marketType: "futures" },
-      { symbol: "GC1!", action: "BUY", price: "2,045", time: now.toLocaleTimeString(), trend: "up", strength: 4, marketType: "futures" },
     ],
   };
   return baseSignals[marketType] || [];
@@ -60,7 +53,7 @@ const getStrengthLabel = (strength: number) => {
 };
 
 export default function ScannerPage() {
-  const [marketType, setMarketType] = useState<"forex" | "crypto" | "futures">("crypto");
+  const [marketType, setMarketType] = useState<"forex" | "crypto">("crypto");
   const [signals, setSignals] = useState<Signal[]>(generateMockSignals("crypto"));
   const [lastUpdate, setLastUpdate] = useState<Date>(new Date());
   const [isRefreshing, setIsRefreshing] = useState(false);
@@ -101,10 +94,9 @@ export default function ScannerPage() {
     }
 
     // Map market type to TradingView screener type
-    const screenerTypeMap: Record<"forex" | "crypto" | "futures", string> = {
+  const screenerTypeMap: Record<"forex" | "crypto", string> = {
       forex: "forex",
       crypto: "crypto_mkt",
-      futures: "cfd",
     };
 
     // Create and load TradingView script
@@ -158,7 +150,7 @@ export default function ScannerPage() {
             <div className="flex-1">
               <h1 className="text-4xl md:text-5xl font-bold mb-2">Jubilee Market Scanner</h1>
               <p className="text-xl text-muted-foreground">
-                Real-time market analysis across Forex, Crypto, and Futures with live entry signals — 4x | Futures | Crypto
+                Real-time market analysis across Forex and Crypto with live entry signals — Forex | Crypto
               </p>
             </div>
           </div>
@@ -167,14 +159,13 @@ export default function ScannerPage() {
           <div className="mb-6 flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between">
             <div className="flex items-center gap-4">
               <label className="text-sm font-semibold text-foreground">Market Type:</label>
-              <Select value={marketType} onValueChange={(value: "forex" | "crypto" | "futures") => setMarketType(value)}>
+              <Select value={marketType} onValueChange={(value: "forex" | "crypto") => setMarketType(value)}>
                 <SelectTrigger className="w-[180px]">
                   <SelectValue placeholder="Select market" />
                 </SelectTrigger>
                 <SelectContent>
                   <SelectItem value="forex">Forex</SelectItem>
                   <SelectItem value="crypto">Crypto</SelectItem>
-                  <SelectItem value="futures">Futures</SelectItem>
                 </SelectContent>
               </Select>
             </div>

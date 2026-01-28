@@ -11,7 +11,7 @@ export function Navbar() {
   const navLinks = [
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
-    { href: "/blog", label: "Psychology Blog" },
+    { href: "/blog", label: "The Blog Space" },
     { href: "/programs", label: "Programs" },
     { href: "/scanner", label: "Jubilee Scanner" },
     { href: "/tools", label: "AI Intelligence Bot" },

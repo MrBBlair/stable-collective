@@ -35,78 +35,6 @@ export default function AboutPage() {
             </Card>
           </div>
 
-          {/* What We Do */}
-          <div className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">What We Do</h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              <Card>
-                <CardHeader>
-                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-4">
-                    <BookOpen className="h-8 w-8 text-primary" />
-                  </div>
-                  <CardTitle className="text-2xl">Education</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-base leading-relaxed">
-                    We teach traders how to read the market with clarity—not confusion. Our approach focuses on market
-                    structure, bias and direction, timing windows, price cycles, and institutional intent. No
-                    indicators, signals, or guesswork—just a systematic way to understand what price is doing and why.
-                  </CardDescription>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardHeader>
-                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-4">
-                    <Brain className="h-8 w-8 text-primary" />
-                  </div>
-                  <CardTitle className="text-2xl">Psychology</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-base leading-relaxed">
-                    Trading is technical. Surviving it is mental. We emphasize mindset mastery, emotional regulation,
-                    discipline, and the psychological resilience needed to navigate market volatility with confidence.
-                    Our Psychology Blog provides ongoing insights on fear management, habit building, and maintaining
-                    consistency.
-                  </CardDescription>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardHeader>
-                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-4">
-                    <Zap className="h-8 w-8 text-primary" />
-                  </div>
-                  <CardTitle className="text-2xl">Tools</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-base leading-relaxed">
-                    The Jubilee Market Scanner surfaces high-quality trading opportunities across Forex, Crypto, and
-                    Futures markets. Our AI Intelligence Bot (in development) will provide analysis, insight, and
-                    guidance—you stay in control of every trade. Tools extend your edge; they don&apos;t replace your
-                    strategy.
-                  </CardDescription>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardHeader>
-                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-4">
-                    <Users className="h-8 w-8 text-primary" />
-                  </div>
-                  <CardTitle className="text-2xl">Community</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-base leading-relaxed">
-                    Trading is done alone, but learning doesn&apos;t have to be. We connect traders who are serious about
-                    building skill, discipline, and clarity. Through programs, mentorship opportunities, and shared
-                    resources, we create an environment where process matters more than promises.
-                  </CardDescription>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-
           {/* Our Approach */}
           <div className="mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">Our Approach</h2>
@@ -121,12 +49,6 @@ export default function AboutPage() {
                 or easy money. We teach discipline, risk management, and the patience to let your edge play out over
                 time.
               </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Our programs—including Dr. Kathy Kirkland&apos;s mentorship on the ECC11 approach—focus on market
-                structure and timing. Our Psychology Blog addresses the mental side of trading. Our tools help you
-                execute with clarity. Together, they form a complete ecosystem for traders who want to build lasting
-                wealth, not chase the next signal.
-              </p>
             </div>
           </div>
 
@@ -136,30 +58,16 @@ export default function AboutPage() {
             <div className="grid md:grid-cols-3 gap-6">
               <Card>
                 <CardHeader>
-                  <CardTitle>Jubilee Market Scanner</CardTitle>
+                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-4">
+                    <BookOpen className="h-8 w-8 text-primary" />
+                  </div>
+                  <CardTitle className="text-2xl">Trading Programs</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-base leading-relaxed">
-                    Real-time market scanning across Forex, Crypto, and Futures. Surface high-probability setups based
-                    on structure, timing, and institutional flow.
-                  </CardDescription>
-                  <Button asChild variant="outline" className="mt-4 w-full">
-                    <Link href="/scanner">
-                      Explore Scanner
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardHeader>
-                  <CardTitle>Trading Programs</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-base leading-relaxed">
-                    Comprehensive courses and mentorships, including Dr. Kathy Kirkland&apos;s ECC11 approach to market
-                    structure and timing. Learn from traders who have built systems that work.
+                    We teach traders how to read the market with clarity—not confusion. Our comprehensive courses and
+                    mentorships, including Dr. Kathy Kirkland&apos;s ECC11 approach, focus on market structure, bias
+                    and direction, timing windows, price cycles, and institutional intent.
                   </CardDescription>
                   <Button asChild variant="outline" className="mt-4 w-full">
                     <Link href="/programs">
@@ -172,16 +80,42 @@ export default function AboutPage() {
 
               <Card>
                 <CardHeader>
-                  <CardTitle>Psychology Blog</CardTitle>
+                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-4">
+                    <Brain className="h-8 w-8 text-primary" />
+                  </div>
+                  <CardTitle className="text-2xl">The Blog Space</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-base leading-relaxed">
-                    Weekly insights on mindset, discipline, fear management, and emotional control. Master the
-                    psychological side of trading with actionable content you can apply immediately.
+                    The Blog Space is split into two tracks: <strong>Psychology</strong> (mindset, discipline, emotional
+                    control) and <strong>Trading</strong> (practical tips, structure, and execution). Psychology releases
+                    on the 1st, Trading on the 15th.
                   </CardDescription>
                   <Button asChild variant="outline" className="mt-4 w-full">
                     <Link href="/blog">
-                      Read Blog
+                      Visit The Blog Space
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-4">
+                    <Zap className="h-8 w-8 text-primary" />
+                  </div>
+                  <CardTitle className="text-2xl">Jubilee Market Scanner</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription className="text-base leading-relaxed">
+                    Real-time market scanning across Forex, Crypto, and Futures markets. Surface high-probability
+                    setups based on structure, timing, and institutional flow. Our AI Intelligence Bot (in development)
+                    will provide additional analysis and insight—you stay in control of every trade.
+                  </CardDescription>
+                  <Button asChild variant="outline" className="mt-4 w-full">
+                    <Link href="/scanner">
+                      Explore Scanner
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
                   </Button>
