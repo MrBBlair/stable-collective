@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Star, Users, Clock } from "lucide-react";
@@ -42,9 +43,16 @@ export default function ProgramsPage() {
     <div className="min-h-screen trading-bg">
       <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
         <div className="max-w-6xl mx-auto">
+          <Image
+            src="/stable-collective-logo.png"
+            alt="Stable Collective"
+            width={216}
+            height={216}
+            className="mx-auto mb-6 rounded-full object-contain"
+          />
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Trading Programs & Mentorships</h1>
           <p className="text-xl text-muted-foreground mb-12">
-            Elevate your trading journey with our comprehensive educational programs
+            Comprehensive courses and mentorships—including Dr. Kathy Kirkland&apos;s exclusive program—to help you master the markets and build lasting wealth
           </p>
 
           <div className="grid md:grid-cols-2 gap-6">

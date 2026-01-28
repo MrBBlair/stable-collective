@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import {
@@ -17,7 +18,7 @@ const features = [
   {
     icon: Clock,
     title: "24/7 Market Watch",
-    description: "Never miss an opportunity. The EA Bot monitors markets around the clock, executing trades based on your strategy.",
+    description: "Never miss an opportunity. The EA Bot monitors markets around the clock with intelligent risk management, executing trades based on your strategy.",
   },
   {
     icon: TrendingUp,
@@ -56,9 +57,16 @@ export default function ToolsPage() {
         <div className="max-w-5xl mx-auto">
           {/* Hero Section */}
           <div className="text-center mb-16">
+            <Image
+              src="/stable-collective-logo.png"
+              alt="Stable Collective"
+              width={216}
+              height={216}
+              className="mx-auto mb-6 rounded-full object-contain"
+            />
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Stable Collective EA Bot</h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Automated trading solution designed for disciplined, risk-aware traders seeking consistent performance
+              Automated trading solution with 24/7 market watch and intelligent risk management—designed for disciplined, risk-aware traders seeking consistent performance
             </p>
           </div>
 

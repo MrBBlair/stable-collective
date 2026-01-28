@@ -19,16 +19,16 @@ export function Navbar() {
   return (
     <nav className="border-b border-border bg-card/95 backdrop-blur-sm sticky top-0 z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20 md:h-24 py-2">
           <Link href="/" className="flex items-center space-x-3">
             <Image
               src="/stable-collective-logo.png"
               alt="Stable Collective Logo"
-              width={40}
-              height={40}
-              className="rounded-full"
+              width={144}
+              height={144}
+              className="rounded-full object-contain shrink-0 w-20 h-20 md:w-24 md:h-24"
             />
-            <span className="text-2xl font-bold text-primary">Stable Collective</span>
+            <span className="text-xl md:text-2xl font-bold text-primary">Stable Collective</span>
           </Link>
 
           {/* Desktop Navigation */}

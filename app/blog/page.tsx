@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, Calendar } from "lucide-react";
 
@@ -31,9 +32,16 @@ export default function BlogPage() {
     <div className="min-h-screen trading-bg-pattern">
       <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
         <div className="max-w-6xl mx-auto">
+          <Image
+            src="/stable-collective-logo.png"
+            alt="Stable Collective"
+            width={216}
+            height={216}
+            className="mx-auto mb-6 rounded-full object-contain"
+          />
           <h1 className="text-4xl md:text-5xl font-bold mb-4">The Psychology of Trading</h1>
           <p className="text-xl text-muted-foreground mb-12">
-            Insights on mindset, discipline, and emotional mastery in the markets
+            Master your trading mindset with insights on discipline, fear management, emotional control, and the psychological resilience needed to navigate market volatility with confidence
           </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

@@ -1,7 +1,8 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { ArrowRight, Target, Brain, TrendingUp, CheckCircle2, ScanLine, Bot, BookOpenText, GraduationCap, DollarSign } from "lucide-react";
+import { ArrowRight, Target, Brain, TrendingUp, CheckCircle2 } from "lucide-react";
 
 export default function Home() {
   return (
@@ -9,6 +10,14 @@ export default function Home() {
       {/* Hero Section - iBuildLegacies Style */}
       <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
         <div className="text-center max-w-5xl mx-auto">
+          <Image
+            src="/stable-collective-logo.png"
+            alt="Stable Collective"
+            width={336}
+            height={336}
+            className="mx-auto mb-8 rounded-full object-contain"
+            priority
+          />
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-4 leading-tight">
             <span className="block">MASTER THE MARKETS.</span>
             <span className="block text-primary">BUILD YOUR LEGACY.</span>
@@ -45,7 +54,7 @@ export default function Home() {
       <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-            Whether you&apos;re new to trading or ready to elevate your skill, the Stable Collective ecosystem gives you structure, clarity, and advanced trading insight you can actually apply immediately.
+            Whether you&apos;re new to trading or ready to elevate your skill, the Stable Collective ecosystem gives you structure, clarity, and advanced trading insight you can actually apply immediately—from the <strong>Jubilee Market Scanner</strong> and <strong>EA Bot</strong> to comprehensive <strong>trading programs</strong>, mindset mastery in our <strong>Psychology Blog</strong>, and long-term <strong>legacy-building</strong> strategies.
           </p>
         </div>
       </section>
@@ -152,6 +161,9 @@ export default function Home() {
                 And trading isn&apos;t just about reading price. It&apos;s about reading yourself—while the market applies pressure.
               </p>
             </div>
+            <p className="text-center text-muted-foreground mt-6">
+              Build the psychological resilience to navigate volatility—and master your trading mindset with insights on discipline, fear management, and emotional control in our Psychology Blog.
+            </p>
             <div className="mt-8 text-center">
               <Button asChild size="lg">
                 <Link href="/blog">
@@ -164,88 +176,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Stable Collective Core Offerings */}
-      <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
-            Your Complete Trading Ecosystem
-          </h2>
-          <p className="text-xl text-muted-foreground text-center mb-12">
-            Everything Stable Collective offers to help you master the markets and build lasting wealth
-          </p>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
-            {[
-              { 
-                icon: ScanLine, 
-                title: "Jubilee Market Scanner", 
-                desc: "Real-time market analysis across Forex, Crypto, and Futures with live entry signals",
-                href: "/scanner",
-                color: "text-blue-600"
-              },
-              { 
-                icon: Bot, 
-                title: "EA Bot Automation", 
-                desc: "Automated trading solution with 24/7 market watch and intelligent risk management",
-                href: "/tools",
-                color: "text-purple-600"
-              },
-              { 
-                icon: BookOpenText, 
-                title: "Psychology Blog", 
-                desc: "Master your trading mindset with insights on discipline, fear management, and emotional control",
-                href: "/blog",
-                color: "text-green-600"
-              },
-              { 
-                icon: GraduationCap, 
-                title: "Trading Programs", 
-                desc: "Comprehensive courses and mentorships including Dr. Kathy Kirkland's exclusive program",
-                href: "/programs",
-                color: "text-orange-600"
-              },
-              { 
-                icon: Brain, 
-                title: "Mindset Mastery", 
-                desc: "Develop the psychological resilience needed to navigate market volatility with confidence",
-                href: "/blog",
-                color: "text-pink-600"
-              },
-              { 
-                icon: DollarSign, 
-                title: "Legacy Building", 
-                desc: "Long-term wealth strategies focused on generational financial success through disciplined trading",
-                href: "/programs",
-                color: "text-primary"
-              }
-            ].map((feature, index) => (
-              <Link 
-                key={index} 
-                href={feature.href}
-                className="group text-center p-6 rounded-lg bg-card border-2 border-border hover:border-primary hover:shadow-lg transition-all duration-300 cursor-pointer"
-              >
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-4 group-hover:bg-primary/20 transition-colors">
-                  <feature.icon className={`h-8 w-8 ${feature.color} group-hover:scale-110 transition-transform`} />
-                </div>
-                <h3 className="font-bold text-lg mb-2 group-hover:text-primary transition-colors">{feature.title}</h3>
-                <p className="text-sm text-muted-foreground mb-3">{feature.desc}</p>
-                <div className="flex items-center justify-center gap-2 text-primary text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
-                  Learn More
-                  <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                </div>
-              </Link>
-            ))}
-          </div>
-          <div className="text-center mt-12">
-            <Button asChild size="lg">
-              <Link href="/join">
-                JOIN THE COMMUNITY
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-
       {/* Scanner Section */}
       <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="max-w-5xl mx-auto text-center">
@@ -253,7 +183,7 @@ export default function Home() {
             Your Edge in the Market Starts Here.
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
-            The Jubilee Market Scanner is designed to simplify your trading and bring clean confirmations directly to your screen.
+            The Jubilee Market Scanner delivers real-time market analysis across Forex, Crypto, and Futures with live entry signals—designed to simplify your trading and bring clean confirmations directly to your screen.
           </p>
           <div className="grid md:grid-cols-2 gap-4 max-w-2xl mx-auto mb-8 text-left">
             {[
@@ -318,9 +248,9 @@ export default function Home() {
               <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-4">
                 <TrendingUp className="h-8 w-8 text-primary" />
               </div>
-              <h3 className="text-xl font-semibold mb-3">Long-term Wealth</h3>
+              <h3 className="text-xl font-semibold mb-3">Legacy Building</h3>
               <p className="text-muted-foreground">
-                Creating generational wealth through disciplined, strategic trading approaches.
+                Long-term wealth strategies focused on generational financial success through disciplined, strategic trading.
               </p>
             </div>
           </div>
@@ -406,7 +336,7 @@ export default function Home() {
             Ready to Build Your Legacy?
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Join a structured community, learn proven strategies, and trade with clarity.
+            Join a structured community, learn proven strategies, master the markets, and build lasting wealth—with clarity.
           </p>
           <Button asChild size="lg" className="text-lg px-8 py-6">
             <Link href="/join">

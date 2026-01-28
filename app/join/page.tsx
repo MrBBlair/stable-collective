@@ -1,11 +1,12 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle2, Facebook, MessageCircle } from "lucide-react";
+import { Facebook, MessageCircle } from "lucide-react";
 
 export default function JoinPage() {
   const [formData, setFormData] = useState({
@@ -45,7 +46,13 @@ export default function JoinPage() {
         <Card className="max-w-md w-full mx-4">
           <CardHeader className="text-center">
             <div className="flex justify-center mb-4">
-              <CheckCircle2 className="h-16 w-16 text-primary" />
+              <Image
+                src="/stable-collective-logo.png"
+                alt="Stable Collective"
+                width={240}
+                height={240}
+                className="rounded-full object-contain"
+              />
             </div>
             <CardTitle className="text-2xl">Thank You!</CardTitle>
             <CardDescription className="text-base">
@@ -74,6 +81,13 @@ export default function JoinPage() {
       <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-8">
+            <Image
+              src="/stable-collective-logo.png"
+              alt="Stable Collective"
+              width={264}
+              height={264}
+              className="mx-auto mb-6 rounded-full object-contain"
+            />
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Join the Community</h1>
             <p className="text-xl text-muted-foreground">
               Get access to exclusive trading resources, live sessions, and connect with fellow traders

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Twitter, Instagram, Linkedin } from "lucide-react";
 
 export function Footer() {
@@ -7,9 +8,18 @@ export function Footer() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-xl font-bold text-primary mb-4">Stable Collective</h3>
+            <Link href="/" className="flex items-center gap-3 mb-4">
+              <Image
+                src="/stable-collective-logo.png"
+                alt="Stable Collective Logo"
+                width={156}
+                height={156}
+                className="rounded-full object-contain shrink-0"
+              />
+              <h3 className="text-xl font-bold text-primary">Stable Collective</h3>
+            </Link>
             <p className="text-muted-foreground text-sm">
-              Master the Markets with Psychology, Strategy, and Legacy Building.
+              Master the markets and build lasting wealth—Jubilee Scanner, EA Bot, trading programs, psychology blog, and legacy-building strategies.
             </p>
           </div>
 
@@ -79,10 +89,10 @@ export function Footer() {
           <p className="text-xs text-muted-foreground text-center mb-4">
             © {new Date().getFullYear()} Stable Collective. All rights reserved.
           </p>
-          <div className="flex flex-wrap justify-center gap-4 text-xs text-muted-foreground">
-            <Link href="#" className="hover:text-primary transition-colors">Privacy Policy</Link>
+          <div className="flex flex-wrap justify-center gap-4 text-xs text-muted-foreground mb-6">
+            <Link href="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link>
             <span>•</span>
-            <Link href="#" className="hover:text-primary transition-colors">Terms & Conditions</Link>
+            <Link href="/terms" className="hover:text-primary transition-colors">Terms & Conditions</Link>
             <span>•</span>
             <Link href="#" className="hover:text-primary transition-colors">Income Disclaimer</Link>
             <span>•</span>
@@ -90,6 +100,17 @@ export function Footer() {
             <span>•</span>
             <Link href="#" className="hover:text-primary transition-colors">FTC Risk Disclaimer</Link>
           </div>
+          <p className="text-xs text-muted-foreground text-center">
+            Powered by{" "}
+            <a
+              href="https://techephi.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-primary transition-colors font-medium"
+            >
+              Techephi
+            </a>
+          </p>
         </div>
       </div>
     </footer>

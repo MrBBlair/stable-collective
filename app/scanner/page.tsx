@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useRef } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { TrendingUp, TrendingDown } from "lucide-react";
@@ -54,11 +55,20 @@ export default function ScannerPage() {
     <div className="min-h-screen trading-bg-pattern">
       <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
         <div className="max-w-7xl mx-auto">
-          <div className="mb-8">
-            <h1 className="text-4xl md:text-5xl font-bold mb-2">Jubilee Market Interface</h1>
+          <div className="mb-8 flex flex-col sm:flex-row sm:items-center sm:gap-6 gap-4">
+            <Image
+              src="/stable-collective-logo.png"
+              alt="Stable Collective"
+              width={216}
+              height={216}
+              className="rounded-full object-contain shrink-0"
+            />
+            <div>
+              <h1 className="text-4xl md:text-5xl font-bold mb-2">Jubilee Market Scanner</h1>
             <p className="text-xl text-muted-foreground">
-              4x | Futures | Crypto
+              Real-time market analysis across Forex, Crypto, and Futures with live entry signals — 4x | Futures | Crypto
             </p>
+            </div>
           </div>
 
           <div className="grid lg:grid-cols-4 gap-6">
@@ -68,7 +78,7 @@ export default function ScannerPage() {
                 <CardHeader>
                   <CardTitle>Market Scanner</CardTitle>
                   <CardDescription>
-                    Real-time market analysis across Forex, Crypto, and Futures
+                    Real-time market analysis across Forex, Crypto, and Futures with live entry signals
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
