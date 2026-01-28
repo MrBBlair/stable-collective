@@ -73,13 +73,23 @@ export function Footer() {
         </div>
 
         <div className="mt-8 pt-8 border-t border-border">
-          <p className="text-sm text-muted-foreground text-center">
+          <p className="text-sm text-muted-foreground text-center mb-4">
+            Educational purposes only. Trading involves risk and results vary. No financial results are guaranteed.
+          </p>
+          <p className="text-xs text-muted-foreground text-center mb-4">
             © {new Date().getFullYear()} Stable Collective. All rights reserved.
           </p>
-          <p className="text-xs text-muted-foreground text-center mt-2">
-            <strong>Disclaimer:</strong> Trading involves substantial risk of loss and is not suitable for every investor.
-            Past performance is not indicative of future results.
-          </p>
+          <div className="flex flex-wrap justify-center gap-4 text-xs text-muted-foreground">
+            <Link href="#" className="hover:text-primary transition-colors">Privacy Policy</Link>
+            <span>•</span>
+            <Link href="#" className="hover:text-primary transition-colors">Terms & Conditions</Link>
+            <span>•</span>
+            <Link href="#" className="hover:text-primary transition-colors">Income Disclaimer</Link>
+            <span>•</span>
+            <Link href="#" className="hover:text-primary transition-colors">Refund Policy</Link>
+            <span>•</span>
+            <Link href="#" className="hover:text-primary transition-colors">FTC Risk Disclaimer</Link>
+          </div>
         </div>
       </div>
     </footer>

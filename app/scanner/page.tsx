@@ -33,7 +33,7 @@ export default function ScannerPage() {
       defaultColumn: "overview",
       screener_type: "crypto_mkt",
       displayCurrency: "USD",
-      colorTheme: "dark",
+      colorTheme: "light",
       locale: "en",
       isTransparent: false,
     });
@@ -51,7 +51,7 @@ export default function ScannerPage() {
   }, []);
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen trading-bg-pattern">
       <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
         <div className="max-w-7xl mx-auto">
           <div className="mb-8">
