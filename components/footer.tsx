@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Twitter, Instagram, Linkedin } from "lucide-react";
+import { PoweredByTechephiEmblem } from "@/components/powered-by-techephi-emblem";
 
 export function Footer() {
   return (
@@ -52,17 +53,9 @@ export function Footer() {
             <span>•</span>
             <Link href="#" className="hover:text-primary transition-colors">FTC Risk Disclaimer</Link>
           </div>
-          <p className="text-xs text-muted-foreground text-center">
-            Powered by{" "}
-            <a
-              href="https://techephi.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-primary transition-colors font-medium"
-            >
-              Techephi
-            </a>
-          </p>
+          <div className="flex justify-center">
+            <PoweredByTechephiEmblem />
+          </div>
         </div>
       </div>
     </footer>
